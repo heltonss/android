@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora de Viagem</string>
+    <string name="message">esse será seu gasto na viagem</string>
+    <string name="labelDistance">total de km</string>
+    <string name="labelFuel">preço por litro</string>
+    <string name="labelKm">KM\'s por litro</string>
+
+    <string name="hintDistance">Distancia a ser percorrida</string>
+    <string name="hintFule">valor do combustivel</string>
+    <string name="hintKM">autonomia</string>
+</resources>
