@@ -8,4 +8,6 @@
     <string name="hintDistance">Distancia a ser percorrida</string>
     <string name="hintFule">valor do combustivel</string>
     <string name="hintKM">autonomia</string>
+
+    <string name="result"><sup>R$</sup> %1$S</string>
 </resources>

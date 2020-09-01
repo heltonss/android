@@ -24,38 +24,42 @@
             android:text="@string/labelDistance" />
 
         <EditText
-            android:id="@+id/distance"
+            android:id="@+id/etDistance"
             style="@style/input_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/hintDistance" />
 
         <TextView
             style="@style/input_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/labelDistance" />
+            android:text="@string/labelFuel" />
 
         <EditText
-            android:id="@+id/priceFuel"
+            android:id="@+id/etPriceFuel"
             style="@style/input_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/hintDistance" />
 
         <TextView
             style="@style/input_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/labelDistance" />
+            android:text="@string/labelKm" />
 
         <EditText
-            android:id="@+id/km"
+            android:id="@+id/etKm"
             style="@style/input_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/hintDistance" />
         <Button
+            android:id="@+id/btCalcular"
             style="@style/button"
             android:text="calcular"
             android:textAllCaps="true"
@@ -73,11 +77,12 @@
         >
 
         <TextView
+            android:id="@+id/tvResult"
             style="@style/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="R$ 1000000,00" />
+            android:text="@string/result" />
 
         <TextView
             style="@style/message"
