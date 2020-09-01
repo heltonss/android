@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".PlayerActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ping Pong X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+
+    <EditText
+        android:layout_width="253dp"
+        android:layout_height="45dp"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="253dp"
+        android:layout_height="45dp"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="289dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
