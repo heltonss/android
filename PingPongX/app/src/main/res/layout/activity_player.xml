@@ -8,44 +8,80 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
         android:text="Ping Pong X"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="91dp" />
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:text="Começar a partida"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_width="0dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="144dp" />
+        android:layout_marginTop="24dp"
+        android:text="Preencha os campos"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
     <EditText
+        android:id="@+id/etPlayerOne"
         android:layout_width="253dp"
         android:layout_height="45dp"
-        android:hint="Name"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="220dp" />
+        android:layout_marginTop="32dp"
+        android:hint="Nome time da casa"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etPlayerTwo"
         android:layout_width="253dp"
         android:layout_height="45dp"
-        android:hint="Name"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="289dp" />
+        android:layout_marginTop="16dp"
+        android:hint="Nome do time visitante"
+        app:layout_constraintEnd_toEndOf="@+id/etPlayerOne"
+        app:layout_constraintStart_toStartOf="@+id/etPlayerOne"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayerOne" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="32dp"
+        android:text="Começar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayerTwo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Desenvolvido por Helton Silveira"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btStart"
+        app:layout_constraintStart_toStartOf="@+id/btStart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
