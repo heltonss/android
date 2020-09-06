@@ -14,6 +14,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
         android:text="Ping Pong X"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,13 +22,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_height="22dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Começar a partida"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:layout_width="0dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Preencha os campos"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -42,19 +46,27 @@
 
     <EditText
         android:id="@+id/etPlayerOne"
+        style="@style/input_form_red"
         android:layout_width="253dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
+        android:background="#A20B0B"
         android:hint="Nome time da casa"
+        android:paddingLeft="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFF"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/etPlayerTwo"
+        style="@style/input_form_blue"
         android:layout_width="253dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
+        android:paddingLeft="15dp"
+        android:textColorHint="#FFF"
         android:hint="Nome do time visitante"
         app:layout_constraintEnd_toEndOf="@+id/etPlayerOne"
         app:layout_constraintStart_toStartOf="@+id/etPlayerOne"
@@ -62,14 +74,17 @@
 
     <Button
         android:id="@+id/btStart"
+        style="@style/buttom_custom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="232dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
         android:text="Começar"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPlayerTwo" />
 

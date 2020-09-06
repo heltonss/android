@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btFinishMatch.setBackgroundColor(resources.getColor(R.color.colorYellow))
+        btFinishMatch.setTextColor(resources.getColor(R.color.colorBlue))
+
         Log.d("ESTADO", "onCreate")
 
 

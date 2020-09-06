@@ -14,14 +14,16 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="Ping Pong X"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvPlayerOneScore"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        style="@style/input_form_red"
+        android:layout_width="116dp"
+        android:layout_height="110dp"
         android:layout_marginStart="24dp"
         android:text="0"
         android:textAlignment="center"
@@ -34,8 +36,8 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_width="41dp"
+        android:layout_height="98dp"
         android:layout_marginTop="64dp"
         android:text="x"
         android:textAlignment="center"
@@ -47,6 +49,7 @@
 
     <TextView
         android:id="@+id/tvPlayerTwoScore"
+        style="@style/input_form_blue"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -83,6 +86,7 @@
 
     <Button
         android:id="@+id/btPlayerOneScore"
+        style="@style/buttom_custom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ponto"
@@ -94,6 +98,7 @@
 
     <Button
         android:id="@+id/btPlayerTwoScore"
+        style="@style/buttom_custom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -104,6 +109,7 @@
 
     <Button
         android:id="@+id/btFinishMatch"
+        style="@style/buttom_custom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
@@ -114,6 +120,7 @@
 
     <Button
         android:id="@+id/btRevenge"
+        style="@style/buttom_custom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

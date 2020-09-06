@@ -9,9 +9,25 @@
     </style>
 
     <style name="FullScreen" parent="AppTheme">
-        <item name="windowActionBar">false</item>
+        <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="buttom_custom">
+        <item name="android:background">@drawable/custom_buttom</item>
+        <item name="android:colorBackground">#051C60</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="input_form_red">
+        <item name="android:background">@drawable/custom_edittext_red</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="input_form_blue">
+        <item name="android:background">@drawable/custom_edittext_blue</item>
+        <item name="android:textColor">#FFF</item>
     </style>
 
 </resources>
