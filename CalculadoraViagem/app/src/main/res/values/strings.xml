@@ -9,5 +9,5 @@
     <string name="hintFule">valor do combustivel</string>
     <string name="hintKM">autonomia</string>
 
-    <string name="result"><sup>R$</sup> %1$S</string>
+    <string name="result"><sup><small>R$</small></sup> %1$s</string>
 </resources>
