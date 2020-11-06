@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.heltonsilveira.jogodavelha"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+
+    // Biblioteca Assistente para outras dependências
+    //incluindo regras de teste do JUnit que podem ser usadas com o LiveData.
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    //Biblioteca AAC
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    //Componentes da biblioteca de design
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    //Biblioteca para teste de interface
+    androidTestImplementation("com.schibsted.spain:barista:2.9.0") {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+}
